@@ -4,8 +4,7 @@
   publish = "_site"
 
 [context.production]
-  command = "echo production"
-  #command = "node scripts/writeConf.js && jekyll build --config _config_production.yml"
+  command = "node scripts/writeConf.js && jekyll build --config _config_production.yml"
 
 #[context.deploy-preview]
 #  command = "node scripts/writeConf.js && jekyll build --config _config.yml"
