@@ -1,19 +1,10 @@
 [build]
-  # command = "node scripts/writeConf.js && jekyll build --config _config.yml"
-  command = "echo default"
+  command = "node scripts/writeConf.js && jekyll build --config"
   publish = "_site"
 
 [context.production]
   command = "node scripts/writeConf.js && jekyll build --config _config_production.yml"
 
-#[context.deploy-preview]
-#  command = "node scripts/writeConf.js && jekyll build --config _config.yml"
-
-#[context.branch-deploy]
-#  command = "node scripts/writeConf.js && jekyll build --config _config.yml"
-
 [context.deploy-preview]
-  command = "echo preview"
-
-[context.branch-deploy]
-  command = "echo branch"
+  command = "node scripts/writeConf.js && jekyll build --config _config.yml"
+  publish = "_site"
