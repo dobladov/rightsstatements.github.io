@@ -7,3 +7,6 @@
 
 [context.deploy-preview]
   command = "node scripts/writeConf.js && jekyll build --config _config.yml"
+
+[context.branch-deploy]
+  command = "node scripts/writeConf.js && jekyll build --config _config.yml"
