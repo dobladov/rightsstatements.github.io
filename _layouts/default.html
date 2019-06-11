@@ -22,7 +22,7 @@
 
       <script src='{{ site.baseurl }}/js/modernizr.js'></script>
       {% include cookies.html %}
-      {% if site.google_analytics %}{% include analytics.html %}{% endif %}
+      {% if site.google_analytics and jekyll.environment == "production" %}{% include analytics.html %}{% endif %}
     </head>
     <body>
       {% include nav.html %}
