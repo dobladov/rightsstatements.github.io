@@ -5,5 +5,5 @@
 [context.production]
   command = "node scripts/writeConf.js && jekyll build --config _config_production.yml"
 
-[context.deploy-preview.environment]
+[context.deploy-preview]
   command = "node scripts/writeConf.js && jekyll build"
