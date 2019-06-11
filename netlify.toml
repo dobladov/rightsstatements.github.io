@@ -1,6 +1,2 @@
-[build]
-  command = "node scripts/writeConf.js && jekyll build"
-  publish = "_site"
-
 [context.production.environment]
   JEKYLL_ENV = "production"
