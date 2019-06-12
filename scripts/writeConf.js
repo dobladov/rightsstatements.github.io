@@ -4,13 +4,14 @@ const writeFile = promisify(fs.writeFile)
 const readFile = promisify(fs.readFile)
 
 const writeConf = async () => {
-  const { CMS_REPO, CMS_BRANCH } = process.env
+  const { HEAD, REPOSITORY_URL } = process.env
+  const repo = (REPOSITORY_URL && REPOSITORY_URL.split('@')[1].replace("github.com/", '')) || null
 
-  if (CMS_REPO && CMS_BRANCH) {
+  if (HEAD && repo) {
     const config = await readFile('./admin/config.yml', 'utf8')
     let replacedConfig = config
-      .replace('${CMS_REPO}', CMS_REPO)
-      .replace('${CMS_BRANCH}', CMS_BRANCH)
+      .replace('${CMS_REPO}', repo)
+      .replace('${CMS_BRANCH}', HEAD)
     await writeFile('./admin/config.yml', replacedConfig)
     console.info("Configuration replaced")
   } else {
