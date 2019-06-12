@@ -11,7 +11,7 @@ const writeConf = async () => {
     const config = await readFile('./admin/config.yml', 'utf8')
     let replacedConfig = config
       .replace('${CMS_REPO}', repo)
-      .replace('${HEAD}', HEAD)
+      .replace('${CMS_BRANCH}', HEAD)
     await writeFile('./admin/config.yml', replacedConfig)
     console.info("Configuration replaced")
   } else {
