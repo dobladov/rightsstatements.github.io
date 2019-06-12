@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Documentation
-section_id: documentation
 lang: en
+title: Documentation 2
+section_id: documentation
 ---
 
 # Documentation
