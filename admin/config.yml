@@ -21,7 +21,7 @@ collections:
   - label: "Pages"
     name: "pages"
     folder: 'en/'
-    preview_path: en/{{section_id}}
+    preview_path: en/{{slug}}
     create: true
     slug: '{{slug}}'
     editor:
@@ -35,7 +35,7 @@ collections:
   - label: "Documentation"
     name: "documentation"
     folder: 'en/documentation/'
-    preview_path: en/documentation/{{section_id}}
+    preview_path: en/documentation/{{slug}}
     create: true
     slug: '{{slug}}'
     editor:
@@ -49,7 +49,7 @@ collections:
   - label: "Statements"
     name: "statements"
     folder: 'en/statements/'
-    preview_path: en/statements/{{section_id}}
+    preview_path: en/statements/{{slug}}
     create: true
     slug: '{{slug}}'
     editor:
