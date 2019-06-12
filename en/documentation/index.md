@@ -1,7 +1,7 @@
 ---
 layout: page
 lang: en
-title: Documentation 2
+title: Documentation
 section_id: documentation
 ---
 
