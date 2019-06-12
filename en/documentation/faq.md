@@ -1,8 +1,8 @@
 ---
 layout: page
+lang: en
 title: Rights Statements - FAQ
 section_id: documentation
-lang: en
 ---
 
 # Frequently Asked Questions
@@ -14,6 +14,7 @@ lang: en
 - What are rights statements?
 
     The 12 rights statements provided by RightsStatements.org can be used by cultural heritage institutions to indicate the rights status of digital objects that they make available online, either on their own website or via aggregation platforms. The rights statements have been designed with both human users and machine users (such as search engines) in mind and are provided as a linked data vocabulary. These rights statements are high-level summaries of the underlying rights status of the digital objects that they apply to. As such they do not replace but complement more detailed information about the rights status (including the license) of digital objects that the institutions that apply these statements may possess.
+TEST
 
 - How do they differ from the Creative Commons licenses?
 
