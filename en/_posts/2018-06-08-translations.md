@@ -1,7 +1,7 @@
 ---
 layout: post
-title: German and Estonian translations now available for use
-date: 2018-06-08 12:00:00
+title: German and Estonian translations now available for use!
+date: 2018-06-08T12:00:00.000Z
 ---
 
 Welcome to the rightsstatements.org blog!  We will use this blog to share information about the development of rightsstatements.org and about the resources that can help you implementing our rights statements.
